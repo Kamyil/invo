@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: url("img/bg.png") no-repeat center center fixed;
+  font-family: Segoe UI;
+  background-size: cover; }
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 64px; }
+
+nav {
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(40, 40, 40, 0.8);
+  width: 60%;
+  height: 13vh;
+  margin-left: auto;
+  margin-right: auto;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+#elements {
+  position: absolute;
+  float: left;
+  bottom: -20%;
+  left: 20%; }
+
+.empty {
+  width: 4vw;
+  height: 4vw;
+  background-color: black;
+  float: left;
+  margin-left: 3%;
+  position: relative; }
+
+.element {
+  margin-left: 4vw;
+  position: relative;
+  bottom: 8vh; }
+
+.element img {
+  width: 4vw;
+  border: 3px solid rgba(30, 30, 30, 0.9);
+  float: left;
+  margin-left: 1vw; }
+
+.element:hover {
+  cursor: pointer; }
+
+#elements-taken {
+  margin-bottom: 15vh;
+  color: white;
+  font-size: 20px;
+  width: 800px; }
+
+#invo-portrait video {
+  width: 13vh;
+  left: 2%;
+  position: fixed;
+  bottom: 0; }
+
+#invo-portrait h5 {
+  color: white;
+  text-shadow: 2px 2px #222;
+  font-weight: 500; }
+
+.quas {
+  background-image: url("img/Quas_icon.png");
+  border: 2.5px solid green;
+  width: 2.5vw;
+  height: 2.5vw;
+  border-radius: 50%;
+  float: left;
+  margin-left: 10px;
+  background-size: cover; }
+
+.wex {
+  background-image: url("img/Wex_icon.png");
+  width: 2.5vw;
+  height: 2.5vw;
+  border: 2.5px solid green;
+  border-radius: 50%;
+  float: left;
+  margin-left: 10px;
+  background-size: cover; }
+
+.exort {
+  background-image: url("img/Exort_icon.png");
+  width: 2.5vw;
+  height: 2.5vw;
+  border: 2.5px solid green;
+  border-radius: 50%;
+  float: left;
+  margin-left: 10px;
+  background-size: cover; }
