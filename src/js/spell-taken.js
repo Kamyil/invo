@@ -4,6 +4,8 @@
 	let spell_container = document.getElementById("spell-invoked");
 	let update = [];
 	let spell; 
+	let empty = document.querySelector('.empty');
+	
 	
 	
 	
@@ -49,6 +51,7 @@
 			if(update=="quas,quas,quas"){
 				spell="Cold Snap";
 				console.log(spell);
+				
 			}
 			else if(update=="quas,quas,wex"){
 				spell="Ghost Walk";
@@ -72,6 +75,14 @@
 			}
 			else if(update=="quas,exort,wex"){
 				spell="Deafening Blast";
+				console.log(spell);
+			}
+			else if(update=="quas,exort,quas"){
+				spell="Ice Wall";
+				console.log(spell);
+			}
+			else if(update=="quas,wex,quas"){
+				spell="Ghost Walk";
 				console.log(spell);
 			}
 
@@ -105,6 +116,14 @@
 				spell="Deafening Blast";
 				console.log(spell);
 			}
+			else if(update=="wex,exort,wex"){
+				spell="Alacrity";
+				console.log(spell);
+			}
+			else if(update=="wex,quas,wex"){
+				spell="Tornado";
+				console.log(spell);
+			}
 
 			//BEGGINING WITH EXORT
 
@@ -134,6 +153,14 @@
 			}
 			else if(update=="exort,wex,quas"){
 				spell="Deafening Blast";
+				console.log(spell);
+			}
+			else if(update=="exort,wex,exort"){
+				spell="Chaos Meteor";
+				console.log(spell);
+			}
+			else if(update=="exort,quas,exort"){
+				spell="Forge Spirit";
 				console.log(spell);
 			}
 
