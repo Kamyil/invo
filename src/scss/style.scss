@@ -7,6 +7,21 @@ $wex-image: url('img/Wex_icon.png');
 $exort-image: url('img/Exort_icon.png');
 $invoke-image: url('img/Invoke_icon.png');
 $invoke-bg: white;
+$talents: url('img/talents.png');
+//Spell icons
+$alacrity: url('img/Alacrity_icon.png');
+$cold-snap: url('img/Cold_Snap_icon.png');
+$chaos-meteor: url('img/Chaos_Meteor_icon.png');
+$def-blast: url('img/Deafening_Blast_icon.png');
+$emp: url('img/EMP_icon.png');
+$forge-spirit: url('img/Forge_Spirit_icon.png');
+$ghost-walk: url('img/Ghost_Walk_icon.png');
+$ice-wall: url('img/Ice_Wall_icon.png');
+$sun-strike: url('img/Sun_Strike_icon.png');
+$tornado: url('img/Tornado_icon.png');
+
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -29,7 +44,7 @@ h1{
 nav{
 	position: fixed;
 	bottom: 0;
-	background-color: rgba(40,40,40,0.8);
+	background-color: rgba(10,10,10,0.8);
 	width: 60%;
 	height: 13vh;
 	margin-left: auto;
@@ -37,21 +52,31 @@ nav{
 	left: 50%;
 	transform: translateX(-50%);
 }
+video::-webkit-media-controls {
+	display: none;
+  }
+  #talents{
+	background-image: $talents;
+	width: 2.5vw;
+	height: 2.5vw;
+	float: left;
+  }
 #elements{
 	position: absolute;
 	float: left;
-	bottom: -20%;
+	bottom: -2vh;
 	left: 20%;
-
+	width: 100%;
 	
 }
 .empty{
-	width: 4vw;
-	height: 4vw;
+	width: 3vw;
+	height: 3vw;
 	background-color: black;
 	float: left;
-	margin-left: 3%;
+	margin-left: 1%;
 	position: relative;
+	border: 3px solid rgba(60,60,60,0.9);
 }
 .element{
 	margin-left: 4vw;
@@ -61,10 +86,10 @@ nav{
 }
 .element img{
 	width: 4vw;
-	border: 3px solid rgba(30,30,30,0.9);
+	border: 3px solid rgba(60,60,60,0.9);
 	
 	float: left;
-	margin-left: 1vw;
+	margin-left: .5vw;
 	
 	
 	
@@ -73,10 +98,9 @@ nav{
 	cursor: pointer;
 }
 #elements-taken{
-	margin-bottom: 15vh;
-	color: white;
-	font-size: 20px;
-	width: 800px;
+position: relative;
+bottom: 5vh;
+left: 15vw;
 
 }
 
@@ -88,24 +112,43 @@ nav{
 }
 #invo-portrait h5{
 	color: white;
-	text-shadow: 2px 2px #222;
+	text-shadow: 1px 1px #000;
 	font-weight: 500;
+	position: absolute;
+	bottom: 16vh;
+	right: 65.5vw;
 }
+// Quas
+#quas{
+	width: 3vw;
+	height: 3vw;
+}
+
+#wex{
+	width: 3vw;
+	height: 3vw;
+}
+#exort{
+	width: 3vw;
+	height: 3vw;
+}
+
 .quas{
 	background-image: $quas-image;
-	border: 2.5px solid green; 
-	width: 2.5vw;
-	height: 2.5vw;
+	border: .2vw solid green; 
+	width: 1.8vw;
+	height: 1.8vw;
 	border-radius: 50%;
 	float: left;
 	margin-left: 10px;
 	background-size: cover;
 }
+
 .wex{
 	background-image: $wex-image;
-	width: 2.5vw;
-	height: 2.5vw;
-	border: 2.5px solid green; 
+	border: .2vw solid green; 
+	width: 1.8vw;
+	height: 1.8vw; 
 	border-radius: 50%;
 	float: left;
 	margin-left: 10px;
@@ -113,11 +156,142 @@ nav{
 }
 .exort{
 	background-image: $exort-image;
-	width: 2.5vw;
-	height: 2.5vw;
-	border: 2.5px solid green; 
+	border: .2vw solid green; 
+	width: 1.8vw;
+	height: 1.8vw; 
 	border-radius: 50%;
 	float: left;
 	margin-left: 10px;
 	background-size: cover;
+}
+
+#invoke img{
+	width: 3vw;
+	height: 3vw;
+}
+#invoke::after{
+	content: "F";
+
+	color: white;
+	background-color: black;
+	padding-right: .6%;
+	padding-left: .6%;
+	border-radius: 25%;
+	position: relative;
+	right: 3.3vw;
+	
+}
+
+
+
+// ****************** SPELLS ****************************************
+.alacrity{
+	width: 3vw;
+	height: 3vw;
+	background-image: $alacrity;
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-left: 1%;
+	position: relative;
+	border: 3px solid rgba(60,60,60,0.9);
+}
+.chaos-meteor{
+	width: 3vw;
+	height: 3vw;
+	background-image: $chaos-meteor;
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-left: 1%;
+	position: relative;
+	border: 3px solid rgba(60,60,60,0.9);
+}
+.cold-snap{
+	width: 3vw;
+	height: 3vw;
+	background-image: $cold-snap;
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-left: 1%;
+	position: relative;
+	border: 3px solid rgba(60,60,60,0.9);
+}
+.def-blast{
+	width: 3vw;
+	height: 3vw;
+	background-image: $def-blast;
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-left: 1%;
+	position: relative;
+	border: 3px solid rgba(60,60,60,0.9);
+}
+.emp{
+	width: 3vw;
+	height: 3vw;
+	background-image: $emp;
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-left: 1%;
+	position: relative;
+	border: 3px solid rgba(60,60,60,0.9);
+}
+.forge-spirit{
+	width: 3vw;
+	height: 3vw;
+	background-image: $forge-spirit;
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-left: 1%;
+	position: relative;
+	border: 3px solid rgba(60,60,60,0.9);
+}
+.ghost-walk{
+	width: 3vw;
+	height: 3vw;
+	background-image: $ghost-walk;
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-left: 1%;
+	position: relative;
+	border: 3px solid rgba(60,60,60,0.9);
+}
+.ice-wall{
+	width: 3vw;
+	height: 3vw;
+	background-image: $ice-wall;
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-left: 1%;
+	position: relative;
+	border: 3px solid rgba(60,60,60,0.9);
+}
+.sun-strike{
+	width: 3vw;
+	height: 3vw;
+	background-image: $sun-strike;
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-left: 1%;
+	position: relative;
+	border: 3px solid rgba(60,60,60,0.9);
+}
+.tornado{
+	width: 3vw;
+	height: 3vw;
+	background-image: $tornado;
+	background-size: cover;
+	background-position: center;
+	float: left;
+	margin-left: 1%;
+	position: relative;
+	border: 3px solid rgba(60,60,60,0.9);
 }
