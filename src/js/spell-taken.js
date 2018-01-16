@@ -5,8 +5,8 @@
 	let update = [];
 	let spell; 
 	let empty = document.querySelector('.empty');
-
-	
+	let invoke_sound = new Audio('sounds/Invoke.mp3');
+	invoke_sound.volume=.1;
 	
 	
 	
@@ -49,6 +49,7 @@
 		//F - Invoke
 		if (e.keyCode == 102) {
 			console.log(update);
+			invoke_sound.play();
 			//BEGINNING WITH QUAS
 			if(update=="quas,quas,quas"){
 				spell="Cold Snap";
