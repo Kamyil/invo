@@ -1,4 +1,6 @@
 $bg-color: #202020;
+$hud-color: rgba(32,38,43,0.9);
+$stone-color: rgba(32,38,43,1);
 $quas-color: blue; 
 $wex-color: purple;
 $exort-color: darkorange;
@@ -7,7 +9,7 @@ $wex-image: url('img/Wex_icon.png');
 $exort-image: url('img/Exort_icon.png');
 $invoke-image: url('img/Invoke_icon.png');
 $invoke-bg: white;
-$talents: url('img/talents.png');
+$talents0: url("img/talents_icon0.png");
 //Spell icons
 $alacrity: url('img/Alacrity_icon.png');
 $cold-snap: url('img/Cold_Snap_icon.png');
@@ -39,33 +41,67 @@ h1{
 	color: white;
 
 	font-weight: 300;
-	font-size: 64px;
+	font-size: 34px;
 }
 nav{
 	position: fixed;
 	bottom: 0;
-	background-color: rgba(10,10,10,0.8);
-	width: 60%;
+	background-color: $hud-color;
+	width: 52vw;
 	height: 13vh;
 	margin-left: auto;
 	margin-right: auto;
 	left: 50%;
 	transform: translateX(-50%);
 }
+
+#stone1{
+	background-color: $stone-color;
+	position: fixed;
+	height: 12vh;
+	top: 20px;
+	width: 3vw;
+	bottom: 0;
+	left: -20px;
+	transform: rotate(3deg);
+   
+    
+	-webkit-box-shadow: inset 5px 5px 1px -1px rgba(68,70,82,1);
+	-moz-box-shadow: inset 5px 5px 1px -1px rgba(68,70,82,1);
+	box-shadow: inset 5px 5px 1px -1px rgba(68,70,82,1);
+	z-index: 5;
+}
+#stone2{
+	background-color: $stone-color;
+	position: fixed;
+	height: 12vh;
+	top: 35px;
+	width: 3vw;
+	bottom: 0;
+	left: -35px;
+	transform: rotate(3deg);
+   
+    z-index: 4;
+	-webkit-box-shadow: inset 5px 5px 1px -1px rgba(68,70,82,1);
+	-moz-box-shadow: inset 5px 5px 1px -1px rgba(68,70,82,1);
+	box-shadow: inset 5px 5px 1px -1px rgba(68,70,82,1);
+}
 video::-webkit-media-controls {
 	display: none;
   }
-  #talents{
-	background-image: $talents;
-	width: 2.5vw;
-	height: 2.5vw;
+  
+  #talents img{
 	float: left;
+	width: 5.5%;
+	position: relative;
+bottom: 8.5vh;
+left: 0.5vw;
   }
 #elements{
 	position: absolute;
 	float: left;
-	bottom: -2vh;
-	left: 20%;
+	bottom: -2.8vh;
+	left: 15%;
 	width: 100%;
 	
 }
@@ -76,18 +112,27 @@ video::-webkit-media-controls {
 	float: left;
 	margin-left: 1%;
 	position: relative;
-	border: 3px solid rgba(60,60,60,0.9);
+	border: 3px solid #aeadbb;
 }
 .element{
 	margin-left: 4vw;
 	position: relative;
-	bottom: 8vh;
+	bottom: 8.5vh;
 
 }
 .element img{
 	width: 4vw;
-	border: 3px solid rgba(60,60,60,0.9);
-	
+	background: #eee;
+
+	border: 2px solid transparent;
+
+	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	border-image-slice: 1;
 	float: left;
 	margin-left: .5vw;
 	
@@ -106,9 +151,13 @@ left: 15vw;
 
 #invo-portrait video{
 	width: 13vh;
-	left: 2%;
+	left: 0%;
 	position: fixed;
 	bottom: 0;
+	-webkit-box-shadow: 0px 0px 51px 5px rgba(0,0,0,0.39);
+-moz-box-shadow: 0px 0px 51px 5px rgba(0,0,0,0.39);
+box-shadow: 0px 0px 51px 5px rgba(0,0,0,0.39);
+z-index: 6;
 }
 #invo-portrait h5{
 	color: white;
@@ -117,6 +166,24 @@ left: 15vw;
 	position: absolute;
 	bottom: 16vh;
 	right: 65.5vw;
+}
+#level{
+	background-color: black;
+	color: orange;
+	border: 3px solid #202020;
+	text-shadow: 0 0 5px #d5aa77, 0 0 5px #542e0a;	
+	width: 2vw;
+    display: flex;
+	z-index: 7;
+    justify-content: center;
+	border-radius: 50%;
+	height: 3.2vh;
+	position: absolute;
+	right: 58.7vw;
+	bottom: 30px;
+	font-size: 2vh;
+
+	
 }
 // Quas
 #quas{
@@ -182,7 +249,10 @@ left: 15vw;
 	
 }
 
-
+.spells-invoked{
+	position: relative;
+bottom: 8.5vh;
+}
 
 // ****************** SPELLS ****************************************
 .alacrity{
@@ -194,7 +264,17 @@ left: 15vw;
 	float: left;
 	margin-left: 1%;
 	position: relative;
-	border: 3px solid rgba(60,60,60,0.9);
+	
+
+	border: 2px solid transparent;
+
+	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	border-image-slice: 1;
 }
 .chaos-meteor{
 	width: 3vw;
@@ -205,7 +285,15 @@ left: 15vw;
 	float: left;
 	margin-left: 1%;
 	position: relative;
-	border: 3px solid rgba(60,60,60,0.9);
+	border: 2px solid transparent;
+
+	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	border-image-slice: 1;
 }
 .cold-snap{
 	width: 3vw;
@@ -216,7 +304,15 @@ left: 15vw;
 	float: left;
 	margin-left: 1%;
 	position: relative;
-	border: 3px solid rgba(60,60,60,0.9);
+	border: 2px solid transparent;
+
+	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	border-image-slice: 1;
 }
 .def-blast{
 	width: 3vw;
@@ -227,7 +323,15 @@ left: 15vw;
 	float: left;
 	margin-left: 1%;
 	position: relative;
-	border: 3px solid rgba(60,60,60,0.9);
+	border: 2px solid transparent;
+
+	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	border-image-slice: 1;
 }
 .emp{
 	width: 3vw;
@@ -238,7 +342,15 @@ left: 15vw;
 	float: left;
 	margin-left: 1%;
 	position: relative;
-	border: 3px solid rgba(60,60,60,0.9);
+	border: 2px solid transparent;
+
+	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	border-image-slice: 1;
 }
 .forge-spirit{
 	width: 3vw;
@@ -249,7 +361,15 @@ left: 15vw;
 	float: left;
 	margin-left: 1%;
 	position: relative;
-	border: 3px solid rgba(60,60,60,0.9);
+	border: 2px solid transparent;
+
+	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	border-image-slice: 1;
 }
 .ghost-walk{
 	width: 3vw;
@@ -260,7 +380,15 @@ left: 15vw;
 	float: left;
 	margin-left: 1%;
 	position: relative;
-	border: 3px solid rgba(60,60,60,0.9);
+	border: 2px solid transparent;
+
+	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	border-image-slice: 1;
 }
 .ice-wall{
 	width: 3vw;
@@ -271,7 +399,15 @@ left: 15vw;
 	float: left;
 	margin-left: 1%;
 	position: relative;
-	border: 3px solid rgba(60,60,60,0.9);
+	border: 2px solid transparent;
+
+	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	border-image-slice: 1;
 }
 .sun-strike{
 	width: 3vw;
@@ -282,7 +418,15 @@ left: 15vw;
 	float: left;
 	margin-left: 1%;
 	position: relative;
-	border: 3px solid rgba(60,60,60,0.9);
+	border: 2px solid transparent;
+
+	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	border-image-slice: 1;
 }
 .tornado{
 	width: 3vw;
@@ -293,5 +437,13 @@ left: 15vw;
 	float: left;
 	margin-left: 1%;
 	position: relative;
-	border: 3px solid rgba(60,60,60,0.9);
+	border: 2px solid transparent;
+
+	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
+	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	border-image-slice: 1;
 }
