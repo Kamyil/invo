@@ -1,3 +1,5 @@
+
+
 $bg-color: #202020;
 $hud-color: rgba(32,38,43,0.9);
 $stone-color: rgba(32,38,43,1);
@@ -54,7 +56,27 @@ nav{
 	left: 50%;
 	transform: translateX(-50%);
 }
-
+.upper-bar{
+	width: 40vw;
+	margin-left: auto;
+	margin-right: auto;
+	height: 4vh;
+	background-color: rgba(32,38,43,0.8);
+}
+.timer img{
+	width: 20%;
+	position: relative;
+	left: 2.3vw;
+	top: .2vh;
+}
+.timer{
+	width: 6vw;
+	height: 4.5vh;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: $stone-color;
+	text-align: center;
+}
 #stone1{
 	background-color: $stone-color;
 	position: fixed;
@@ -92,16 +114,17 @@ video::-webkit-media-controls {
   
   #talents img{
 	float: left;
-	width: 5.5%;
+	width: 6.1%;
 	position: relative;
-bottom: 8.5vh;
-left: 0.5vw;
+bottom: 9vh;
+left: 0.7vw;
+
   }
 #elements{
 	position: absolute;
 	float: left;
-	bottom: -2.8vh;
-	left: 15%;
+	bottom: -2.2vh;
+	left: 19%;
 	width: 100%;
 	
 }
@@ -128,13 +151,13 @@ left: 0.5vw;
 
 	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
 	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
-	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
-	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
--moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 20%);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.55);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.55);
 	border-image-slice: 1;
 	float: left;
-	margin-left: .5vw;
+	margin-left: .6vw;
 	
 	
 	
@@ -161,11 +184,29 @@ z-index: 6;
 }
 #invo-portrait h5{
 	color: white;
-	text-shadow: 1px 1px #000;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+	letter-spacing: 2px;
 	font-weight: 500;
 	position: absolute;
-	bottom: 16vh;
-	right: 65.5vw;
+	bottom: 15.6vh;
+	right: 55.2vw;
+}
+.stats{
+	height: 13vh;
+	width: 3vw;
+	position: fixed;
+	bottom: 0;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,2d0b14+14&0+0,1+27 */
+background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(45,11,20,0.72) 14%, rgba(45,11,20,1) 27%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(45,11,20,0.72) 14%,rgba(45,11,20,1) 27%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(45,11,20,0.72) 14%,rgba(45,11,20,1) 27%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#2d0b14',GradientType=1 ); /* IE6-9 */
+	left: 110px;
+	z-index: 10;
+	-webkit-box-shadow: 10px 0px 15px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 10px 0px 15px 0px rgba(0,0,0,0.4);
+	box-shadow: 10px 0px 15px 0px rgba(0,0,0,0.4);
 }
 #level{
 	background-color: black;
@@ -179,25 +220,27 @@ z-index: 6;
 	border-radius: 50%;
 	height: 3.2vh;
 	position: absolute;
-	right: 58.7vw;
-	bottom: 30px;
+	right: 60.7vw;
+	bottom: 23px;
 	font-size: 2vh;
-
+	-webkit-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.39);
+	-moz-box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.39);
+	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.39);
 	
 }
 // Quas
 #quas{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 }
 
 #wex{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 }
 #exort{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 }
 
 .quas{
@@ -233,31 +276,58 @@ z-index: 6;
 }
 
 #invoke img{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 }
-#invoke::after{
-	content: "F";
 
-	color: white;
-	background-color: black;
-	padding-right: .6%;
-	padding-left: .6%;
-	border-radius: 25%;
-	position: relative;
-	right: 3.3vw;
-	
-}
 
 .spells-invoked{
 	position: relative;
 bottom: 8.5vh;
 }
 
+
+.hp-bar{
+	background-color: green;
+	position: fixed;
+	top: 7.5vh;
+	width: 23.1vw;
+	height: 2.3vh;
+	left: 10.7vw;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	font-weight: 500;
+	text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 1);
+	letter-spacing: 1px;
+	font-size: 90%;
+	-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.39);
+-moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.39);
+box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.39);
+}
+.mana-bar{
+	background-color: blue;
+	position: fixed;
+	width: 23.1vw;
+	height: 2.3vh;
+	border-radius: 5px;
+	bottom: 5px;
+	left: 10.7vw;
+	text-align: center;
+	color: white;
+	font-weight: 500;
+	text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 1);
+	letter-spacing: 1px;
+	font-size: 90%;
+	-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.39);
+-moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.39);
+box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.39);
+}
+
 // ****************** SPELLS ****************************************
 .alacrity{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	background-image: $alacrity;
 	background-size: cover;
 	background-position: center;
@@ -271,14 +341,14 @@ bottom: 8.5vh;
 	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
 	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
 	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
-	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
--moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.55);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.55);
 	border-image-slice: 1;
 }
 .chaos-meteor{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	background-image: $chaos-meteor;
 	background-size: cover;
 	background-position: center;
@@ -290,14 +360,14 @@ box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
 	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
 	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
 	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
-	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
--moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.55);
+box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.55);
 	border-image-slice: 1;
 }
 .cold-snap{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	background-image: $cold-snap;
 	background-size: cover;
 	background-position: center;
@@ -309,14 +379,14 @@ box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
 	-moz-border-image: -moz-linear-gradient(top, #7d838f .1%, #2f3841 2%);
 	-webkit-border-image: -webkit-linear-gradient(top, #7d838f .1%, #2f3841 2%);
 	border-image: linear-gradient(to bottom, #7d838f .1%, #2f3841 2%);
-	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
--moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
+	-webkit-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.55);
+-moz-box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.55);
 box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
 	border-image-slice: 1;
 }
 .def-blast{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	background-image: $def-blast;
 	background-size: cover;
 	background-position: center;
@@ -334,8 +404,8 @@ box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
 	border-image-slice: 1;
 }
 .emp{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	background-image: $emp;
 	background-size: cover;
 	background-position: center;
@@ -353,8 +423,8 @@ box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
 	border-image-slice: 1;
 }
 .forge-spirit{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	background-image: $forge-spirit;
 	background-size: cover;
 	background-position: center;
@@ -372,8 +442,8 @@ box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
 	border-image-slice: 1;
 }
 .ghost-walk{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	background-image: $ghost-walk;
 	background-size: cover;
 	background-position: center;
@@ -391,8 +461,8 @@ box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
 	border-image-slice: 1;
 }
 .ice-wall{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	background-image: $ice-wall;
 	background-size: cover;
 	background-position: center;
@@ -410,8 +480,8 @@ box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
 	border-image-slice: 1;
 }
 .sun-strike{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	background-image: $sun-strike;
 	background-size: cover;
 	background-position: center;
@@ -429,8 +499,8 @@ box-shadow: 0px 0px 1px 3px rgba(0,0,0,0.85);
 	border-image-slice: 1;
 }
 .tornado{
-	width: 3vw;
-	height: 3vw;
+	width: 2.5vw;
+	height: 2.5vw;
 	background-image: $tornado;
 	background-size: cover;
 	background-position: center;

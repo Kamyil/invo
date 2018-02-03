@@ -8,7 +8,13 @@
 	</head>
 <body>
 
-	<h1>Invoker Training Game</h1>
+	<div class="upper-bar">
+		<div class="timer">
+			<img src="css/img/sun.png" alt="" srcset="">
+			0:00
+		</div>
+		<div class="invo-portrait"></div>
+	</div>
 
 
 	<nav>
@@ -22,6 +28,7 @@
 			<div id="stone2"></div>		
 		</div>
 		<div id="invo-portrait"><h5>INVOKER</h5>
+			<div class="stats"></div>
 				<video controls autoplay loop>
 					<source src="portrait.mp4" type="video/mp4">
 				</video>
@@ -55,6 +62,10 @@
 		</div>
 		
 	</div>
+	<div class="bars">
+		<div class="hp-bar">520/520</div>
+		<div class="mana-bar">267/267</div>
+	</div>
 </nav>
 
 
@@ -76,6 +87,7 @@
 
 
 <script src="js/spell-taken.js"></script>
+<script src="js/invo-voice.js"></script>
 </body>
 	
 		</html>
