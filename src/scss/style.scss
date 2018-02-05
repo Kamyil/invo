@@ -120,6 +120,10 @@ bottom: 9vh;
 left: 0.7vw;
 
   }
+  #talents img:hover{
+	cursor: pointer;
+
+  }
 #elements{
 	position: absolute;
 	float: left;
@@ -231,7 +235,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 //stats
 .stats li{
 	color: #c9c9c9;
-	font-size: 90%;
+	font-size: 80%;
+	margin-top: 4%;
 	list-style: none;
 	font-weight: 500;
 }
@@ -338,12 +343,17 @@ box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.39);
 	border: none;
 	font-size: 125%;
 	margin-top: 50vh;
+	outline: none;
 }
 .level-upgrader button:hover{
 background-color: #404040;
 cursor: pointer;
 transition-duration: 0.15s;
 }
+.level-upgrader button:active{
+	transform: scale(0.95);
+	transition-duration: 0.15s;
+	}
 
 // ****************** SPELLS ****************************************
 .alacrity{

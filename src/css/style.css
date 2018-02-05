@@ -87,6 +87,9 @@ video::-webkit-media-controls {
   bottom: 9vh;
   left: 0.7vw; }
 
+#talents img:hover {
+  cursor: pointer; }
+
 #elements {
   position: absolute;
   float: left;
@@ -190,7 +193,8 @@ video::-webkit-media-controls {
 
 .stats li {
   color: #c9c9c9;
-  font-size: 90%;
+  font-size: 80%;
+  margin-top: 4%;
   list-style: none;
   font-weight: 500; }
 
@@ -285,11 +289,20 @@ video::-webkit-media-controls {
   font-weight: 700;
   border: none;
   font-size: 125%;
-  margin-top: 50vh; }
+  margin-top: 50vh;
+  outline: none; }
 
 .level-upgrader button:hover {
   background-color: #404040;
   cursor: pointer;
+  -webkit-transition-duration: 0.15s;
+       -o-transition-duration: 0.15s;
+          transition-duration: 0.15s; }
+
+.level-upgrader button:active {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
   -webkit-transition-duration: 0.15s;
        -o-transition-duration: 0.15s;
           transition-duration: 0.15s; }
