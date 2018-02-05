@@ -228,6 +228,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', e
 	box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.39);
 	
 }
+//stats
+.stats li{
+	color: #c9c9c9;
+	font-size: 90%;
+	list-style: none;
+	font-weight: 500;
+}
 // Quas
 #quas{
 	width: 2.5vw;
@@ -322,6 +329,20 @@ box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.39);
 	-webkit-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.39);
 -moz-box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.39);
 box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.39);
+}
+.level-upgrader button{
+	padding: 1%;
+	background-color: $hud-color;
+	color: white;
+	font-weight: 700;
+	border: none;
+	font-size: 125%;
+	margin-top: 50vh;
+}
+.level-upgrader button:hover{
+background-color: #404040;
+cursor: pointer;
+transition-duration: 0.15s;
 }
 
 // ****************** SPELLS ****************************************

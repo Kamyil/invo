@@ -188,6 +188,12 @@ video::-webkit-media-controls {
   -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.39);
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.39); }
 
+.stats li {
+  color: #c9c9c9;
+  font-size: 90%;
+  list-style: none;
+  font-weight: 500; }
+
 #quas {
   width: 2.5vw;
   height: 2.5vw; }
@@ -271,6 +277,22 @@ video::-webkit-media-controls {
   font-size: 90%;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.39);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.39); }
+
+.level-upgrader button {
+  padding: 1%;
+  background-color: rgba(32, 38, 43, 0.9);
+  color: white;
+  font-weight: 700;
+  border: none;
+  font-size: 125%;
+  margin-top: 50vh; }
+
+.level-upgrader button:hover {
+  background-color: #404040;
+  cursor: pointer;
+  -webkit-transition-duration: 0.15s;
+       -o-transition-duration: 0.15s;
+          transition-duration: 0.15s; }
 
 .alacrity {
   width: 2.5vw;
