@@ -31,3 +31,23 @@
 	8.EQW - Deafening Blast
 	9.EWQ - Deafening Blast
 	*/
+	
+	let show_combos_btn = document.querySelector('.show-spell-combos');
+	let combos = document.querySelector('.spell-combos-hide');
+
+	
+	
+
+	show_combos_btn.addEventListener('click',function(){
+
+
+	combos.classList.toggle('spell-combos-show');
+	combos.classList.toggle('spell-combos-hide');
+	
+	});
+
+
+
+
+
+	
