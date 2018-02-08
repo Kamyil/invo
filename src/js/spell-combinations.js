@@ -34,7 +34,8 @@
 	
 	let show_combos_btn = document.querySelector('.show-spell-combos');
 	let combos = document.querySelector('.spell-combos-hide');
-
+	let show_names_btn = document.querySelector('.show-spell-names-off');
+	let combos_names = document.querySelector('.spell-combos-names-hide');
 	
 	
 
@@ -44,6 +45,50 @@
 	combos.classList.toggle('spell-combos-show');
 	combos.classList.toggle('spell-combos-hide');
 	
+	if(combos.className == "spell-combos-show"){
+
+		show_names_btn.classList.add('show-spell-names-on');
+	}
+	if(combos.className == "spell-combos-hide"){
+
+		show_names_btn.classList.remove('show-spell-names-on');
+
+	}
+	if(combos_names.className == 'spell-combos-names-show'){
+
+		combos_names.classList.remove('spell-combos-names-show');
+		combos_names.classList.add('spell-combos-names-hide');
+
+		combos.classList.add('spell-combos-hide');
+		combos.classList.remove('spell-combos-show');
+
+		show_names_btn.innerHTML = "Show spell names";
+
+		show_names_btn.classList.remove('show-spell-names-on');
+		show_names_btn.classList.add('show-spell-names-off');
+
+	}
+	});
+
+
+	show_names_btn.addEventListener('click',function(){
+
+		combos_names.classList.toggle('spell-combos-names-show');
+		combos_names.classList.toggle('spell-combos-names-hide');
+
+
+		if(combos_names.className == 'spell-combos-names-show'){
+			combos.classList.add('spell-combos-hide');
+			combos.classList.remove('spell-combos-show');
+			show_names_btn.innerHTML="Hide spell names";
+		}
+		if(combos_names.className == 'spell-combos-names-hide'){
+			combos.classList.remove('spell-combos-hide');
+			combos.classList.add('spell-combos-show');
+			show_names_btn.innerHTML="Show spell names";
+		}
+		
+
 	});
 
 

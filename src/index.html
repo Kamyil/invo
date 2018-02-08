@@ -12,10 +12,12 @@
 
 <div class="controls">
 		<button class="show-spell-combos">Toogle spell combinations</button>
+		<button class="show-spell-names-off">Show spell names</button>
+
 		<button class="level-up">Level Up</button>
-		<button class="refresh-all">Refresh all</button>
-		<button class="refresh-lvl">Refresh level</button>
-		<button class="refresh-items">Refresh items</button>
+	
+		<button class="refresh-lvl">Refresh</button>
+	
 		<button class="keys-settings">Keys settings</button>
 		<button class="about-me">About me</button>
 	
@@ -80,6 +82,7 @@
 			
 		</div>
 		<img src="css/img/Invoke_list.png" alt="" class="spell-combos-hide">
+		<img src="css/img/invoke_list_names.png" alt="" class="spell-combos-names-hide">
 	</div>
 	<div class="bars">
 		<div class="hp-bar"> <p class="hp-regen">1.7</p></div>
@@ -104,35 +107,60 @@
 <div class="keys-settings-off">
 	<ul>
 		<h1>Actually using</h1>
-	<li style="color:blue">Quas : A</li>
-	<li style="color:violet">Wex : S </li>
-	<li style="color:orange">Exort : D</li>
-	<li style="color:whitee">Invoke : F</li>
+	<li style="color:blue; text-transform:uppercase;" class="quas-binded"> A</li>
+	<li style="color:violet;text-transform:uppercase;" class="wex-binded"> S </li>
+	<li style="color:orange;text-transform:uppercase;" class="exort-binded"> D </li>
+	<li style="color:white;text-transform:uppercase;" class="invoke-binded"> F </li>
 
 </ul>
-<button class="bind bind-quas">Bind</button>
+
 <div class="keys">	
+		<h5>Click on element you want to bind and type the key to bind it!</h5>
 	<div class="quas-key">
 		
 	</div>
-	<button class="bind bind-wex">Bind</button>
+
 	<div class="wex-key">
 
 	</div>
-	<button class="bind bind-exort">Bind</button>
+
 	<div class="exort-key">
 
 	</div>
-	<button class="bind bind-invoke">Bind</button>
+
 	<div class="invoke-key">
 
 	</div>
-	<button class="legacy">Use legacy keys</button>
+
 </div>
 
-<button class="close">+</div>
 
-<button>
+</div>
+
+
+
+
+<div class="shop-hide">
+	<h1>Shop</h1>
+	<input type="text" class="searchbar" placeholder="Search items...">
+<ul class="shop-items">
+	<li class="shop-item">Null Talisman</li>
+	<li class="shop-item">Boots Of Speed</li>
+	<li class="shop-item">Hand of Midas</li>
+	<li class="shop-item">Boots of Travel</li>
+	<li class="shop-item">Aghanim's Scepter</li>
+	<li class="shop-item">Blink Dagger</li>
+	<li class="shop-item">Linken Sphere</li>
+	<li class="shop-item">Octarine Core</li>
+	<li class="shop-item">Shiva's Guard</li>
+	<li class="shop-item">Black King Bar</li>
+</ul>
+
+</div>
+
+<button class="gold-btn">
+322 	<img src="css/img/gold.png" alt="">	
+</button>
 
 
 
@@ -156,6 +184,8 @@
 <script src="js/lvl-upgrader.js"></script>
 <script src="js/spell-combinations.js"></script>
 <script src="js/keys.js"></script>
+<script src="js/shop.js"></script>
+
 </body>
 	
 		</html>

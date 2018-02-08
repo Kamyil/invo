@@ -8,8 +8,10 @@
 	let invoke_sound = new Audio('sounds/Invoke.mp3');
 	invoke_sound.volume = .1;
 
-
-
+	let quas_key = 'a';
+	let wex_key = 's';
+	let exort_key = 'd';
+	let invoke_key = 'f';
 
 	document.addEventListener("keypress", function (e) {
 
@@ -35,6 +37,8 @@
 					element.className = "exort";
 					update.push('exort');
 					container.appendChild(element);
+					bonus_dmg = bonus_dmg +2;
+					dmg_container.innerHTML =  base_dmg  + '<span style="color:green">' + "+" +  bonus_dmg + '</span>' + '&nbsp<img src="css/img/dmg.png" style="width:25%;">';
 
 				}
 
