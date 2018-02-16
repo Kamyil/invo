@@ -4,7 +4,7 @@
 
 body {
   background: url("img/bg.png") no-repeat center center fixed;
-  font-family: Segoe UI;
+  font-family: 'Open Sans', sans-serif;
   background-size: cover; }
 
 h1 {
@@ -83,10 +83,10 @@ video::-webkit-media-controls {
 
 #talents img {
   float: left;
-  width: 6%;
+  width: 5.5%;
   position: relative;
-  bottom: 9vh;
-  left: 0.7vw; }
+  bottom: 8.8vh;
+  left: 1.5vh; }
 
 #talents img:hover {
   cursor: pointer; }
@@ -94,18 +94,9 @@ video::-webkit-media-controls {
 #elements {
   position: absolute;
   float: left;
-  bottom: -2.2vh;
+  bottom: -1.5vh;
   left: 19%;
-  width: 100%; }
-
-.empty {
-  width: 3vw;
-  height: 3vw;
-  background-color: black;
-  float: left;
-  margin-left: 1%;
-  position: relative;
-  border: 3px solid #aeadbb; }
+  width: 98%; }
 
 .element {
   margin-left: 4vw;
@@ -146,14 +137,14 @@ video::-webkit-media-controls {
   color: white;
   text-shadow: 1px 1px 0px black;
   letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: 600;
   position: absolute;
   bottom: 15.6vh;
   right: 55.2vw; }
 
 .stats {
   height: 13vh;
-  width: 3vw;
+  width: 3.5vw;
   position: fixed;
   bottom: 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,2d0b14+14&0+0,1+27 */
@@ -175,7 +166,7 @@ video::-webkit-media-controls {
   color: orange;
   border: 3px solid #202020;
   text-shadow: 0 0 5px #d5aa77, 0 0 5px #542e0a;
-  width: 2vw;
+  width: 3vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,21 +175,21 @@ video::-webkit-media-controls {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  height: 3.2vh;
+  height: 3vh;
   position: absolute;
-  right: 60.7vw;
+  right: 117%;
   bottom: 23px;
-  font-size: 2vh;
+  font-size: 95%;
+  line-height: 2.8vh;
   -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.39);
   box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.39); }
 
 .stats li {
   color: #c9c9c9;
-  font-size: 80%;
-  margin-top: 5%;
+  font-size: 75%;
+  margin-top: 0.01%;
   list-style: none;
-  font-weight: 500;
-  margin-right: 3%; }
+  font-weight: 600; }
 
 #quas {
   width: 2.5vw;
@@ -285,7 +276,7 @@ video::-webkit-media-controls {
   border-radius: 5px;
   text-align: center;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   text-shadow: 1.5px 1.5px 0px black;
   letter-spacing: 1px;
   font-size: 90%;
@@ -302,12 +293,26 @@ video::-webkit-media-controls {
   left: 10.7vw;
   text-align: center;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   text-shadow: 1.5px 1.5px 0px black;
   letter-spacing: 1px;
   font-size: 90%;
   -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.39);
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.39); }
+
+.hp-regen {
+  float: right;
+  margin-right: 1%;
+  color: lightgreen;
+  font-size: 70%;
+  margin-top: 0.3vh; }
+
+.mana-regen {
+  float: right;
+  margin-right: 1%;
+  color: lightblue;
+  font-size: 70%;
+  margin-top: 0.3vh; }
 
 .controls {
   position: fixed;
@@ -350,7 +355,7 @@ video::-webkit-media-controls {
   width: 16vw;
   height: 13vh;
   float: right;
-  margin-right: 1.5vw;
+  margin-right: 1.5%;
   background-color: #2f3841;
   -webkit-box-shadow: 0px 13px 49px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 13px 49px 0px rgba(0, 0, 0, 0.75);
@@ -413,7 +418,7 @@ video::-webkit-media-controls {
   font-size: 110%;
   margin-top: 1.5vh;
   text-align: center;
-  font-weight: 500; }
+  font-weight: 600; }
 
 .show-spell-names-off {
   display: none; }
@@ -432,7 +437,7 @@ video::-webkit-media-controls {
   left: 6vw;
   color: white;
   margin-bottom: 2vh;
-  font-weight: 500; }
+  font-weight: 600; }
 
 .quas-key {
   width: 6vw;
@@ -545,19 +550,24 @@ video::-webkit-media-controls {
 
 .shop-show h1 {
   font-size: 170%;
-  font-weight: 500; }
+  font-weight: 600;
+  margin-top: 1vh; }
 
 .shop-show li {
   color: #e2e2e2;
   list-style-type: none;
-  margin-top: 3vh;
-  font-size: 115%;
+  margin-top: 1vh;
+  font-size: 90%;
   background-color: rgba(32, 38, 43, 0.7);
   width: 100%;
   text-align: right;
   height: 5vh;
   line-height: 4.5vh;
-  font-weight: 500; }
+  font-weight: 600; }
+
+.shop-items img {
+  float: left;
+  margin-left: 5%; }
 
 .shop-show li:hover {
   color: #e2e2e2;
@@ -596,7 +606,7 @@ video::-webkit-media-controls {
 .searchbar {
   color: #e2e2e2;
   list-style-type: none;
-  margin-top: 3vh;
+  margin-top: 2vh;
   font-size: 90%;
   background-color: rgba(32, 38, 43, 0.99);
   width: 70%;
@@ -610,6 +620,96 @@ video::-webkit-media-controls {
   height: 4vh;
   line-height: 4.5vh;
   text-align: center; }
+
+.item-price {
+  color: goldenrod;
+  float: right;
+  margin-right: 3%; }
+
+.name {
+  float: left;
+  margin-left: 3%; }
+
+.invoke-challenge {
+  width: 40%;
+  height: 35vh;
+  background-color: rgba(32, 38, 43, 0.8);
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-top: 10%; }
+
+.invoke-challenge-hide {
+  display: none; }
+
+.spell-to-invoke {
+  position: relative;
+  color: white;
+  font-size: 400%;
+  margin: auto;
+  text-align: center;
+  margin-top: 2vh; }
+
+.time {
+  text-align: center;
+  color: gray; }
+
+.rank {
+  position: relative;
+  margin-top: 6vh;
+  text-align: center;
+  color: white; }
+
+#progressBar {
+  width: 100%;
+  margin: auto auto;
+  height: 2vh;
+  background-color: rgba(32, 38, 43, 0.8);
+  font-size: 80%; }
+
+#progressBar div {
+  height: 100%;
+  text-align: right;
+  padding: 0 10px;
+  line-height: 2vh;
+  /* same as #progressBar height if we want text middle aligned */
+  width: 0;
+  background-color: white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.start-challenge {
+  font-family: Open Sans;
+  width: 8vh;
+  padding: 1vh;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: relative;
+  margin-top: 1vh; }
+
+.start-challenge:hover {
+  cursor: pointer;
+  background-color: white;
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s; }
+
+.start-challenge-hide {
+  display: none; }
+
+.rank-img {
+  position: relative;
+  bottom: 10%; }
 
 .alacrity {
   width: 2.5vw;

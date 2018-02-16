@@ -37,8 +37,6 @@
 					element.className = "exort";
 					update.push('exort');
 					container.appendChild(element);
-					bonus_dmg = bonus_dmg +2;
-					dmg_container.innerHTML =  base_dmg  + '<span style="color:green">' + "+" +  bonus_dmg + '</span>' + '&nbsp<img src="css/img/dmg.png" style="width:25%;">';
 
 				}
 

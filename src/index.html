@@ -4,19 +4,33 @@
 		<meta charset="UTF-8">
 		<title>Invoke</title>
 		<link rel="stylesheet" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
 
 	</head>
 <body>
 
+<div class="invoke-challenge-hide">
 
+
+
+		<div id="progressBar">
+				<div class="bar"></div>
+			  </div>
+<div class="spell-to-invoke">Invoke Challenge</div>
+<div class="time">In this challenge you have to invoke spells as fast as you can. After succesful invoke you'll earn points + timeleft multiplier. If you fail invoke - you'll loose some points. Depending on your points, script will give you a rank. Try your best. 
+	 </div>
+<div class="rank">Ready? Click the button below</div>
+	<button class="start-challenge">Start</button>
+</div>
 
 <div class="controls">
+		<button class="who-invo">Invoker? Who is he?</button>
 		<button class="show-spell-combos">Toogle spell combinations</button>
 		<button class="show-spell-names-off">Show spell names</button>
 
 		<button class="level-up">Level Up</button>
 	
-		<button class="refresh-lvl">Refresh</button>
+		<button class="invoke-challenge-button">Invoke Challenge</button>
 	
 		<button class="keys-settings">Keys settings</button>
 		<button class="about-me">About me</button>
@@ -85,8 +99,8 @@
 		<img src="css/img/invoke_list_names.png" alt="" class="spell-combos-names-hide">
 	</div>
 	<div class="bars">
-		<div class="hp-bar"> <p class="hp-regen">1.7</p></div>
-		<div class="mana-bar"><p class="mana-regen">1.2</p></div>
+		<div class="hp-bar"></div> 
+		<div class="mana-bar"></div>
 	</div>
 
 	<div class="items">
@@ -142,24 +156,31 @@
 
 <div class="shop-hide">
 	<h1>Shop</h1>
-	<input type="text" class="searchbar" placeholder="Search items...">
+	<!-- <input type="text" class="searchbar" placeholder="Search items..."> -->
 <ul class="shop-items">
-	<li class="shop-item">Null Talisman</li>
-	<li class="shop-item">Boots Of Speed</li>
-	<li class="shop-item">Hand of Midas</li>
-	<li class="shop-item">Boots of Travel</li>
-	<li class="shop-item">Aghanim's Scepter</li>
-	<li class="shop-item">Blink Dagger</li>
-	<li class="shop-item">Linken Sphere</li>
-	<li class="shop-item">Octarine Core</li>
-	<li class="shop-item">Shiva's Guard</li>
-	<li class="shop-item">Black King Bar</li>
+	<li class="shop-item"> <img src="css/img/null_talisman.png" alt=""><span class="name">	Null Talisman </span><span class="item-price">465</span>&nbsp;&nbsp; </li>
+	<li class="shop-item"><img src="css/img/boots.png" alt=""><span class="name">Boots Of Speed</span><span class="item-price">400</span>&nbsp;&nbsp;</li>
+	<li class="shop-item"><img src="css/img/midas.png" alt=""><span class="name">Hand of Midas</span><span class="item-price">2150</span>&nbsp;&nbsp;</li>
+	<li class="shop-item"><img src="css/img/travel.png" alt=""><span class="name">Boots of Travel</span><span class="item-price">2400</span>&nbsp;&nbsp;</li>
+	<li class="shop-item"><img src="css/img/aghanim.png" alt=""><span class="name">Aghanim's Scepter</span><span class="item-price">4200</span>&nbsp;&nbsp;</li>
+	<li class="shop-item"><img src="css/img/blink.png" alt=""><span class="name">Blink Dagger</span><span class="item-price">2250</span>&nbsp;&nbsp;</li>
+	<li class="shop-item"><img src="css/img/linken.png" alt=""><span class="name">Linken Sphere</span><span class="item-price">5050</span>&nbsp;&nbsp;</li>
+	<li class="shop-item"><img src="css/img/octarine.png" alt=""><span class="name">Octarine Core</span><span class="item-price">5900</span>&nbsp;&nbsp;</li>
+	<li class="shop-item"><img src="css/img/shiva.png" alt=""><span class="name">Shiva's Guard</span><span class="item-price">4750</span>&nbsp;&nbsp;</li>
+	<li class="shop-item"><img src="css/img/bkb.png" alt=""><span class="name">Black King Bar</span><span class="item-price">3975</span>&nbsp;&nbsp;</li>
+	<li class="shop-item"><img src="css/img/bloodthorn.png" alt=""><span class="name">Bloodthorn</span><span class="item-price">7195</span>&nbsp;&nbsp;</li>
+	<li class="shop-item"><img src="css/img/eul.png" alt=""><span class="name">Eul's Scepter of Divinity</span><span class="item-price">2750</span> 	&nbsp;&nbsp;</li>
+	<li class="shop-item"><img src="css/img/hex.png" alt=""><span class="name">Scythe of Vyse</span><span class="item-price">5700</span>&nbsp;&nbsp;</li>
+	<li class="shop-item"><img src="css/img/refresher.png" alt=""><span class="name">Refresher Orb</span><span class="item-price">5200</span>&nbsp;&nbsp;</li>
+
+
 </ul>
 
 </div>
 
 <button class="gold-btn">
-322 	<img src="css/img/gold.png" alt="">	
+
+ <span class="gold"></span>	<img src="css/img/gold.png" alt="">	
 </button>
 
 
@@ -177,6 +198,7 @@
 
 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script src="js/spell-taken.js"></script>
 <script src="js/invo-voice.js"></script>
@@ -185,7 +207,8 @@
 <script src="js/spell-combinations.js"></script>
 <script src="js/keys.js"></script>
 <script src="js/shop.js"></script>
-
+<script src="js/gold-system.js"></script>
+<script src="js/invoke-challenge.js"></script>
 </body>
 	
 		</html>
