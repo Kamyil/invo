@@ -203,8 +203,7 @@ video::-webkit-media-controls {
   width: 2.5vw;
   height: 2.5vw; }
 
-.quas {
-  background-image: url("img/Quas_icon.png");
+.quas, .wex, .exort {
   border: .2vw solid green;
   width: 1.8vw;
   height: 1.8vw;
@@ -212,26 +211,15 @@ video::-webkit-media-controls {
   float: left;
   margin-left: 10px;
   background-size: cover; }
+
+.quas {
+  background-image: url("img/Quas_icon.png"); }
 
 .wex {
-  background-image: url("img/Wex_icon.png");
-  border: .2vw solid green;
-  width: 1.8vw;
-  height: 1.8vw;
-  border-radius: 50%;
-  float: left;
-  margin-left: 10px;
-  background-size: cover; }
+  background-image: url("img/Wex_icon.png"); }
 
 .exort {
-  background-image: url("img/Exort_icon.png");
-  border: .2vw solid green;
-  width: 1.8vw;
-  height: 1.8vw;
-  border-radius: 50%;
-  float: left;
-  margin-left: 10px;
-  background-size: cover; }
+  background-image: url("img/Exort_icon.png"); }
 
 #invoke {
   width: 40%; }

@@ -251,10 +251,8 @@ line-height: 2.8vh;
 	width: 2.5vw;
 	height: 2.5vw;
 }
-
-.quas{
-	background-image: $quas-image;
-	border: .2vw solid green; 
+.quas,.wex,.exort{
+    border: .2vw solid green; 
 	width: 1.8vw;
 	height: 1.8vw;
 	border-radius: 50%;
@@ -262,27 +260,16 @@ line-height: 2.8vh;
 	margin-left: 10px;
 	background-size: cover;
 }
+.quas{
+	background-image: $quas-image;
+}
 
 .wex{
 	background-image: $wex-image;
-	border: .2vw solid green; 
-	width: 1.8vw;
-	height: 1.8vw; 
-	border-radius: 50%;
-	float: left;
-	margin-left: 10px;
-	background-size: cover;
 }
 
 .exort{
 	background-image: $exort-image;
-	border: .2vw solid green; 
-	width: 1.8vw;
-	height: 1.8vw; 
-	border-radius: 50%;
-	float: left;
-	margin-left: 10px;
-	background-size: cover;
 }
 
 #invoke{

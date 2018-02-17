@@ -2,27 +2,31 @@ let a = Math.random() * 5;
 a = Math.floor(a);
 
 
-window.onload = function () {
+window.addEventListener('load',()=>{
+    let invo_voice;
     if (a == 0) {
 
-        let invo_voice = new Audio('sounds/enter/Invo_begin_01.mp3');
+        invo_voice = new Audio('sounds/enter/Invo_begin_01.mp3');
         invo_voice.volume = 0.06;
         invo_voice.play();
-    } else if (a == 1) {
+    } 
+    else if (a == 1) {
 
-        let invo_voice = new Audio('sounds/enter/Invo_spawn_02.mp3');
+        invo_voice = new Audio('sounds/enter/Invo_spawn_02.mp3');
         invo_voice.volume = 0.06;
         invo_voice.play();
-    } else if (a == 2) {
-        let invo_voice = new Audio('sounds/enter/Invo_spawn_03.mp3');
+    } 
+    else if (a == 2) {
+        invo_voice = new Audio('sounds/enter/Invo_spawn_03.mp3');
         invo_voice.volume = 0.06;
         invo_voice.play();
-    } else if (a == 3) {
-        let invo_voice = new Audio('sounds/enter/Invo_spawn_04.mp3');
+    } 
+    else if (a == 3) {
+        invo_voice = new Audio('sounds/enter/Invo_spawn_04.mp3');
         invo_voice.volume = 0.06;
         invo_voice.play();
     }
-}
+});
 
 document.addEventListener("keypress", function (e) {
 
